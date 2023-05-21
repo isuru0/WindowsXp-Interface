@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Windows Desktop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="startmenu.css">
+    <link rel="stylesheet" href="myComputerWindowStyle.css">
+</head>
+<body onload="startTime()">
+    <header onclick="startclose()"></header>
+
+    <!--======================================== Desktop =======================================-->
+    <div class="icons">
+      <div class="left-icon">
+        <ul>
+        <!--/ My Computer Icon /-->
+        <li ondblclick="mycomputer()">
+            <img src="images/mycomputericon.png" alt="mycomputer Icon" id="mycomputer" title="My Computer">
+            <p id="mycomputer-name">My Computer</p>
+        </li>
+        <!--/ My Documents Icon /-->
+        <li>
+            <img src="images/desktop-icon-mydocument.png" alt="mydocuments Icon" id="mydocuments" title="My Documents">
+            <p class="desktop-icon-names" id="mydocuments-name">My Documents</p>
+        </li>
+        <!--/ Internet Explorer Icon /-->
+        <li>
+            <img src="images/desktop-icon-explorer.png" alt="Internet Explorer Icon" id="explorer" title="Internet Explorer">
+            <p class="desktop-icon-names" id="explorer-name">Internet</p>
+            <p class="desktop-icon-names" id="explorer-name">Explorer</p>
+        </li>
+        </ul>
+      </div>
+
+      <div class="right-icon">
+        <ul>
+          <!--/ Recycle Bin Icon /-->
+          <li>
+            <img src="images/desktop-icon-binon.png" alt="Recyleon Icon" id="binon" title="Recycle Bin">
+            <p id="binon-name">Recycle Bin</p>
+          </li>
+        </ul>
+      </div>
+      <!--===================================================================================================-->
+
+
+      <!--======================================== My Computer Window =======================================-->
+      <div class="mycomputer-window" id="myComputerWindow">
+
+        <!--/ Rows /-->
+        <!--// First Row //-->
+        <div class="nav-first-row">
+          <ul>
+            <img src="images/window/window-mycomputer.png" alt="My computer Icon" class="first-row-img1">
+            <p>My Computer</p>
+            <img src="images/window/window-minimize.jpg" alt="Minimize Buttom" class="first-row-img2 mcwminimize" onclick="mycomputerminimize()">
+            <img src="images/window/window-resize.jpg" alt="Resize Buttom" class="first-row-img2 mcwresize" onclick="mycomputerresize()">
+            <img src="images/window/window-closebutton.jpg" alt="Close Buttom" class="first-row-img2 mcwclose" onclick="mycomputerclose()">
+          </ul>
+        </div>
+
+        <!--// Second Row //-->
+        <div class="nav-second-row">
+          <ul>
+            <li><p>File</p></li>
+            <li><p>Edit</p></li>
+            <li><p>View</p></li>
+            <li><p>Favorites</p></li>
+            <li><p>Tools</p></li>
+            <li><p>Help</p></li>
+          </ul>
+          <div class="nav-second-row-imgbox">
+          <img src="images/window/window-start.png" alt="Start Icon">
+          </div>
+        </div>
+
+        <!--// Third Row //-->
+        <!--
+          <div class="nav-third-row">
+          <ul>
+            <li>
+              <img src="images/window/windows-backbutton.png" alt="Back Button" class="nav-third-row-img1">
+              <p>Back</p>
+            </li>
+            <li>
+              <img src="images/window/windows-backbutton.png" alt="Forword Button" class="nav-third-row-img2">
+            </li>
+            <li>
+              <img src="images/window/windows-backbutton.png" alt="Up folder button" class="nav-third-row-img1">
+            </li>
+            <li>
+              <img src="images/window/windows-backbutton.png" alt="Search Button" class="nav-third-row-img1">
+              <p>Search</p>
+            </li>
+            <li>
+              <img src="images/window/windows-backbutton.png" alt="Folders" class="nav-third-row-img1">
+              <p>Folders</p>
+            </li>
+            <li>
+              <img src="images/window/windows-backbutton.png" class="nav-third-row-img1">
+            </li>
+          </ul>
+        </div>
+      -->
+      <div class="nav-third-row">
+        <img src="images/window/window-bar3.png">
+      </div>
+
+        <!--// Fourth Row //-->
+        <div class="nav-fourth-row">
+          <img src="images/window/window-bar4.jpg">
+        </div>
+
+
+        <!--/ Window Main Box /-->
+        <div class="mycomputer-main-box">
+
+          <!--// Right Window Main Box //-->
+          <div class="left-window-mainbox">
+
+           <!--///  System Tasks  ///-->
+           <div class="lcontents">
+            <!--//// Check box for System Tasks ////-->
+            <label for="checkbox1" class="content-label1">System Tasks</label>
+            <input type="checkbox" id="checkbox1" checked>
+            <!--//// content of System Tasks ////--> 
+            <div class="content1">
+              <ul>
+                <li>
+                  <img src="images/window/window-view.png" alt="view system infomation">
+                  <p>View system information</p>
+                </li>
+                <li>
+                  <img src="images/window/window-add.png">
+                  <p>Add or remove programs</p>
+                </li>
+                <li>
+                  <img src="images/window/window-change.png">
+                  <p>Change a setting</p>
+                </li>
+              </ul>
+            </div>
+           </div>
+
+           <!--///  Other Places  ///-->
+           <div class="lcontents">
+            <!--//// Check box for Other Places ////-->
+            <label for="checkbox2" class="content-label2">Other Places</label>
+            <input type="checkbox" id="checkbox2" checked>
+            <!--//// Content of Other Places ////--> 
+            <div class="content2">
+              <ul>
+                <li>
+                  <img src="images/window/window-network.png" alt="My Network Places">
+                  <p>My Network Places</p>
+                </li>
+                <li>
+                  <img src="images/window/window-document.png">
+                  <p>My Documents</p>
+                </li>
+                <li>
+                  <img src="images/window/window-shared.png">
+                  <p>Shered Documents</p>
+                </li>
+                <li>
+                  <img src="images/window/window-change.png">
+                  <p>Control Panel</p>
+                </li>
+              </ul>
+            </div>
+           </div>
+
+           <!--///  Details  ///-->
+           <div class="lcontents">
+            <!--//// Check box for Details ////-->
+            <label for="checkbox3" class="content-label3">Details</label>
+            <input type="checkbox" id="checkbox3" checked>
+            <!--//// Content of Details ////--> 
+            <div class="content3">
+              <ul>
+                <li><p class="details-content-name">My Computer</p></li>
+                <li><p>System Folder</p></li>
+              </ul>
+            </div>
+           </div>
+  
+
+          </div>
+          
+          
+          <!--// Right Window Main Box //-->
+          <div class="right-window-mainbox">
+            
+            <!--///  First Row  ///-->
+            <div class="file-row">
+              <p class="section-label">Files Stored on This Computer</p>
+              <ul>
+                <li title="Shared Documents">
+                  <img src="images/window/window-folder.png" alt="Folder icon">
+                  <p>Shared Documents</p>
+                </li>
+                <li title="User's Documents">
+                  <img src="images/window/window-folder.png" alt="Folder icon">
+                  <p>User's Documents</p>
+                </li>
+              </ul>
+            </div>
+
+            <!--///  Second Row  ///-->
+            <div class="file-row">
+              <p class="section-label">Hard Disk Drives</p>
+              <ul>
+                <li>
+                  <img src="images/window/window-disk.png" alt="Local disk icon">
+                  <p>Local Disk (C:)</p>
+                </li>
+              </ul>
+            </div>
+
+            <!--///  Third Row  ///-->
+            <div class="file-row">
+              <p class="section-label">Devices with Removable Storage</p>
+              <ul>
+                <li>
+                  <img src="images/window/window-floppy.png" alt="Floppy icon">
+                  <p>3<span><sup><small>1/2</small></sup></span> Floppy (A:)</p>
+                </li>
+                <li>
+                  <img src="images/window/window-cd.png" alt="CD drive icon">
+                  <p>CD Drive (D:)</p>
+                </li>
+              </ul>
+            </div>
+
+
+          </div>
+          
+
+      </div>
+    </div>
+      <!--===========================================================================================-->
+
+
+      <!--======================================== Start Menu =======================================-->
+      <div class="menu-box" id="menuBox">
+
+        <!--/  User Box  /-->
+        <div class="user-box">
+          <img src="images/start/user/userpic.jpg" alt="Profile Picture">
+          <p>User</p>
+        </div>
+
+        <!--/  Start Menu Icons  /-->
+        <div class="icon-box">
+
+          <!--// Left Side Startbox Icons //-->
+          <div class="left-start-icons">
+            <ul>
+              <li>
+                <img src="images/start/menu/Left/start-icon-explorer.png" alt="explorer">
+                <p class="start-menu-top-text">Internet<br><span class="start-menu-top-lowtext">Internet Explorer</span></p>
+              </li>
+              <li>
+                <img src="images/start/menu/left/start-icon-mail.png" alt="email">
+                <p class="start-menu-top-text">E-mail<br><span class="start-menu-top-lowtext">Outlook Express</span></p>
+              </li>
+              <hr class="break-line">
+              <li>
+                <img src="images/start/menu/left/start-icon-cmd.png" alt="cmd">
+                <p class="start-menu-left-text">Command Prompt</p>
+              </li>
+              <li>
+                <img src="images/start/menu/left/start-icon-msn.png" alt="msn">
+                <p class="start-menu-left-text">MSN</p>
+              </li>
+              <li>
+                <img src="images/start/menu/left/start-icon-wmp.png" alt="windows Media Player">
+                <p class="start-menu-left-text">Windows Media Player</p>
+              </li>
+              <li>
+                <img src="images/start/menu/left/start-icon-wmessenger.png" alt="Windows Messenger">
+                <p class="start-menu-left-text">Windows Messenger</p>
+              </li>
+              <li>
+                <img src="images/start/menu/left/start-icon-notepad.webp" alt="notepad">
+                <p class="start-menu-left-text">Notepad</p>
+              </li>
+              <li>
+                <img src="images/start/menu/left/start-icon-tour.png" alt="Tour windows xp">
+                <p class="start-menu-left-text">Tour Windows XP</p>
+              </li>
+              <hr class="break-line">
+              <li>
+                <p id="greenTriangleName">All Programs</p>
+                <img src="images/start/menu/left/start-icon-triangle.ico" alt="green triangle" id="greenTriangle">
+              </li>
+            </ul>
+          </div>
+
+          <!--// Right Side Startbox Icons //-->
+          <div class="right-start-icons">
+            <ul>
+              <li>
+                <img src="images/start/menu/Right/start-icon-mydocument.png" alt="My documents icon">
+                <p class="right-topicon-name">My Documents</p>
+              </li>
+              <li>
+                <img src="images/start/menu/Right/start-icon-recent.png" alt="My recent documents">
+                <p class="right-topicon-name">My Recent Documents</p>
+              </li>
+              <li>
+                <img src="images/start/menu/Right/start-icon-picture.png" alt="My picture">
+                <p class="right-topicon-name">My Picture</p>
+              </li>
+              <li>
+                <img src="images/start/menu/Right/start-icon-music.png" alt="My music">
+                <p class="right-topicon-name">My Music</p>
+              </li>
+              <li onclick="mycomputer()">
+                <img src="images/start/menu/Right/start-icon-mycomputer.png" alt="My computer">
+                <p class="right-topicon-name">My Computer</p>
+              </li>
+              <hr class="break-line2">
+              <li>
+                <img src="images/start/menu/Right/start-icon-control.png" alt="Control panel">
+                <p class="right-icon-name">Control Panel</p>
+              </li>
+              <li>
+                <img src="images/start/menu/Right/start-icon-set.png" alt="Set program">
+                <p class="right-icon-name">Set Program Access and Defaults</p>
+              </li>
+              <li>
+                <img src="images/start/menu/Right/start-icon-print.png" alt="Printers">
+                <p class="right-icon-name">Printers and Faxes</p>
+              </li>
+              <li>
+                <img src="images/start/menu/Right/start-icon-help.png" alt="Help">
+                <p class="right-icon-name">Help and Support</p>
+              </li>
+              <hr class="break-line2">
+              <li>
+                <img src="images/start/menu/Right/start-icon-search.png" alt="Search">
+                <p class="right-icon-name">Search</p>
+              </li>
+              <li>
+                <img src="images/start/menu/Right/start-icon-run.png" alt="Run">
+                <p class="right-icon-name">Run...</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--//  Buttom Box  //-->
+        <div class="bottom-box">
+          <ul>
+            <li><img src="images/start/bottom/start-icon-log.png" alt="log off"></li>
+            <li><p>Log Off</p></li>
+            <li><img src="images/start/bottom/start-icon-off.png" alt="turn off"></li>
+            <li><p>Turn Off Computer</p></li>
+          </ul>
+        </div>
+
+      </div>
+      <!--========================================================================================-->
+      
+
+      <!--======================================== Taskbar =======================================-->
+    </div>
+    <footer>
+        <div class="taskbar">
+            <!--/ Left Section /-->
+            <div class="start" onclick="startButton()">
+                <img src="images/start.png">
+                <p>Start</p>
+            </div>
+
+            <!--/ middle Section /-->
+            <div class="taskbar-icons">
+              <div class="mycomputer-taskbar" id="myComputerWindowShadow" onclick="mycomputerminimize()">
+                <ul>
+                  <li><img src="images/start/menu/Middle/start-icon-mycomputer.png"></li>
+                  <li><p>My Computer</p></li>
+                </ul>
+              </div>
+            </div>
+
+            <!--/ Right Section /-->
+            <div class="time-date">
+                <img src="images/taskbat-wifi.png" alt="wifi logo" id="wifi-logo">
+                <img src="images/taskbat-avast.png" alt="avast logo" id="avast-logo">
+                <img src="images/taskbar-sound.png" alt="sound logo" id="sound-logo">
+                <p id="eng">ENG</p>
+                <p id="realClock">10:00 am</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--===========================================================================================-->
+
+
+
+<script src="script.js"></script>
+</body>
+
+</html>

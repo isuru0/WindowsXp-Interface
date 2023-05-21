@@ -1,0 +1,124 @@
+/*  Start Menu  */
+.menu-box{
+    width: 25%;
+    bottom: 32px;
+    background-color: brown;
+    position: fixed;
+    margin-top: 12.4%;
+    border: 1px solid #0903c2;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 0px 2px#0339ff;
+}
+.menu-box ul li{
+    list-style-type: none;
+}
+
+    /*  User box  */
+    .user-box{
+        background-image: linear-gradient(rgb(48, 17, 187), #2a4dcd);
+        display: flex;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .user-box img{
+        width: 50px;
+        margin: 7px;
+        border-radius: 10px;
+        border: 2px solid #fff;
+    }
+    .user-box p{
+        color: #fff;
+        padding: 23px 0 0 5px;
+        font-size: 20px;
+        font-family:sans-serif;
+    }
+
+
+    /*  Start Menu Icons    */
+    .break-line{width: 70%; margin:0 20px; border: 1px solid #05050527;}
+    .break-line2{width: 70%; margin: 6px 20px; border: 1px solid #05050527;}
+    .icon-box{
+        display: flex;
+        background-color: #2acd32;
+        height: 45%;
+        box-shadow: 0 0 5px #3b72ff;
+    }
+
+        /*  Left Box  */
+        .left-start-icons{
+            background-color: #f4f4f4;
+            width: 50%;
+            font-family:sans-serif;
+        }
+        .left-start-icons ul li{
+            display: flex;
+            padding: 5px;
+        }
+        .left-start-icons ul li:hover{background-color: #3131310e; cursor: pointer;}
+        .left-start-icons ul li img{
+            width: 35px;
+        }
+        .start-menu-top-text{
+            font-size: 11px;
+            font-weight: bold;
+            padding: 5px 4px;
+        }
+        .start-menu-top-lowtext{
+            font-weight: lighter;
+            text-shadow: 0 0 1px #fff;
+        }
+        .start-menu-left-text{
+            font-size: 11px;
+            padding: 10px 4px 0 4px;
+        }
+        #greenTriangle{rotate:90deg; padding:0 0 0 0px; margin: 0;}
+        #greenTriangleName{padding: 10px 10px 0 25px; margin: 0; font-size: 12px; font-weight: bold;}
+
+
+        /*  Right Box   */
+        .right-start-icons{
+            background-image: linear-gradient(to right,#d1f0fc,#d4f4fb);
+            font-family:sans-serif;
+            border: 1px solid #63b0fd;
+            color:#001359;
+        }
+        .right-start-icons ul li{
+            display: flex;
+        }
+        .right-start-icons ul li:hover{background-color: #3131310e; cursor: pointer;}
+        .right-start-icons img{
+            width: 30px;
+            padding: 3px 2px 0 7px;
+        }
+        .right-topicon-name{
+            font-size: 12px;
+            font-weight: bold;
+            padding: 10px 0 0 1px;
+        }
+        .right-icon-name{
+            font-size: 12px;
+            padding: 10px 0 0 1px;
+        }
+
+
+        /*  Bottom Box  */
+        .bottom-box{
+            background-color: #2a4dcd;
+            padding: 2px;
+        }
+        .bottom-box img{
+            width: 25px;
+            padding: 2px 0;
+        }
+        .bottom-box p{
+            font-size: 12px;
+            color: #fff;
+            padding: 7px 10px 0 10px;
+            font-family:sans-serif;
+        }
+        .bottom-box ul{
+            padding: 0 0 0 38%;
+            display: flex;
+        }
+        .bottom-box ul li:hover{background-color: #3131310e; cursor: pointer;}
