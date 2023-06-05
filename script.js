@@ -46,6 +46,11 @@ function startTime() {
     startmenu.style.display = "none";
   }
 
+  // Start Log off Button action
+  function logoff(){
+    location.href = "file:///D:/OFFICIAL/Website/Project/04%20Windows%20XP/LoadPage/loadpage.html";
+  }
+
 
   //  My Computer Button actions
   function mycomputer() {
