@@ -6,6 +6,7 @@
 ** Open the start memu.
 
 ![Alt text](LoadPage/readme/loadpage-normal.jpg)
+![Alt text](LoadPage/readme/loadpage-incorrectPassword.jpg)
 ![Alt text](LoadPage/readme/homepage-normal.jpg)
 ![Alt text](LoadPage/readme/homepage-start.jpg)
 ![Alt text](LoadPage/readme/homepage-mycomputer.jpg)
