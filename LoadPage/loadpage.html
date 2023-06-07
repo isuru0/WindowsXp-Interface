@@ -8,12 +8,12 @@
 </head>
 <body>
     <!--/ Main First Row /-->
-    <div class="main-first-row"></div>
+    <div class="main-first-row" onclick="normalMode()"></div>
     <div class="horizontal-line-1"></div>
     <!--/ Main Second Row /-->
     <div class="main-second-row">
         <!--// Second Row First Column //-->
-        <div class="second-row-first-column">
+        <div class="second-row-first-column" onclick="normalMode()">
             <img src="loadpageimages/loadpage-logo.png" alt="Windowsxp logo">
             <p>To begin, click your user name</p>
         </div>
@@ -21,20 +21,33 @@
         <div class="horizontal-line-2"></div>
         <!--// Second Row Second Column //-->
         <div class="second-row-second-column">
+            <div class="second-row-second-column-emptySpaceup" onclick="normalMode()"></div>
             <div class="second-row-second-column-content">
-                <img src="loadpageimages/loadpage-userpic.jpg" alt="user profile picture" class="second-row-second-column-content-userpic">
+                <img src="loadpageimages/loadpage-userpic.jpg" alt="user profile picture" class="second-row-second-column-content-userpic" onclick="normalMode()">
                 <div>
-                    <p class="second-row-second-column-content-username">User</p>
-                    <p class="second-row-second-column-content-command">Type your password</p>
-                    <input type="password" class="second-row-second-column-content-password">
+                    <p class="second-row-second-column-content-username" onclick="normalMode()">User</p>
+                    <p class="second-row-second-column-content-command" onclick="normalMode()">Type your password</p>
+                    <input type="password" class="second-row-second-column-content-password" id="password" onclick="normalMode()">
                     <img src="loadpageimages/loadpage-enter.png" alt="Enter green arrow" class="second-row-second-column-content-enter" onclick="password()">
+                    <div id="error" >
+                        <div class="second-row-second-column-content-errortriangleback" id="error"></div>
+                        <div class="second-row-second-column-content-error" id="error">
+                            <img src="loadpageimages/loadpage-error.png">
+                            <p class="p1">Did you forget your password?</p>
+                            <p class="p2">You can <span>use your password reset disk.</span></p>
+                            <p class="p3">Please type your password again.<br>
+                                          Be sure to use the correct uppercase and lowercase letters.</p>
+                            </div>
+                            <div class="second-row-second-column-content-errortrianglefront" id="error"></div>
+                    </div>
                 </div>
             </div>
+            <div class="second-row-second-column-emptySpacedown" onclick="normalMode()"></div>
         </div> 
     </div>
     <div class="horizontal-line-3"></div>
     <!--/ Main Third Row /-->
-    <div class="main-third-row">
+    <div class="main-third-row" onclick="normalMode()">
         <!--// Third Row First Column //-->
         <div class="third-row-first-column">
             <img src="loadpageimages/loadpage-shutdown.png" alt="shut down icon">
