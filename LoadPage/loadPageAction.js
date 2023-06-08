@@ -18,6 +18,8 @@ function password(){
         var beforecontents = document.getElementById("beforethecontent");
         beforecontents.style.opacity = 0;
 
+        document.getElementById("loadstartupsound").play();
+
         function loginwindow(){
             location.href = "../index.html";
         }
@@ -30,11 +32,13 @@ function password(){
         var beforecontents = document.getElementById("beforethecontent");
         beforecontents.style.opacity = 0;
 
+        document.getElementById("loadstartupsound").play();
+
         function loginwindow(){
             location.href = "../index.html";
         }
 
-        let loginwindowtime = setTimeout(loginwindow, 3000);
+        let loginwindowtime = setTimeout(loginwindow, 5000);
     }
     else {
         var Error = document.getElementById("error");
