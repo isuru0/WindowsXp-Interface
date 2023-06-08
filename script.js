@@ -48,7 +48,7 @@ function startTime() {
 
   // Start Log off Button action
   function logoff(){
-    location.href = "file:///D:/OFFICIAL/Website/Project/04%20Windows%20XP/LoadPage/loadpage.html";
+    location.href = "./LoadPage/loadpage.html";
   }
 
 

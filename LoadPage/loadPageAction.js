@@ -2,11 +2,9 @@
 // Onload After the Login
 var aftercontents = document.getElementById("afterthecontent");
 aftercontents.style.opacity = 0;
-
 // Onload Before the Login
 var beforecontents = document.getElementById("beforethecontent");
 beforecontents.style.opacity = 1;
-
 // Onload Error message hidden by default
 var Error = document.getElementById("error");
 Error.style.display = "none";
@@ -21,7 +19,7 @@ function password(){
         beforecontents.style.opacity = 0;
 
         function loginwindow(){
-            location.href = "file:///D:/OFFICIAL/Website/Project/04%20Windows%20XP/index.html";
+            location.href = "../index.html";
         }
 
         let loginwindowtime = setTimeout(loginwindow, 3000);
@@ -33,7 +31,7 @@ function password(){
         beforecontents.style.opacity = 0;
 
         function loginwindow(){
-            location.href = "file:///D:/OFFICIAL/Website/Project/04%20Windows%20XP/index.html";
+            location.href = "../index.html";
         }
 
         let loginwindowtime = setTimeout(loginwindow, 3000);
