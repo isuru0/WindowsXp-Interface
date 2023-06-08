@@ -1,23 +1,56 @@
-var Error = document.getElementById("error");
-    Error.style.display = "none";
 
+// Onload After the Login
+var aftercontents = document.getElementById("afterthecontent");
+aftercontents.style.opacity = 0;
+
+// Onload Before the Login
+var beforecontents = document.getElementById("beforethecontent");
+beforecontents.style.opacity = 1;
+
+// Onload Error message hidden by default
+var Error = document.getElementById("error");
+Error.style.display = "none";
+
+// Check the password
 function password(){
     var passw = document.getElementById("password").value;
     if (passw === "password"){
-        location.href = "file:///D:/OFFICIAL/Website/Project/04%20Windows%20XP/index.html";
+        var aftercontents = document.getElementById("afterthecontent");
+        aftercontents.style.opacity = 1;
+        var beforecontents = document.getElementById("beforethecontent");
+        beforecontents.style.opacity = 0;
+
+        function loginwindow(){
+            location.href = "file:///D:/OFFICIAL/Website/Project/04%20Windows%20XP/index.html";
+        }
+
+        let loginwindowtime = setTimeout(loginwindow, 3000);
     }
     else if (passw === "0"){
-        location.href = "file:///D:/OFFICIAL/Website/Project/04%20Windows%20XP/index.html";
+        var aftercontents = document.getElementById("afterthecontent");
+        aftercontents.style.opacity = 1;
+        var beforecontents = document.getElementById("beforethecontent");
+        beforecontents.style.opacity = 0;
+
+        function loginwindow(){
+            location.href = "file:///D:/OFFICIAL/Website/Project/04%20Windows%20XP/index.html";
+        }
+
+        let loginwindowtime = setTimeout(loginwindow, 3000);
     }
     else {
         var Error = document.getElementById("error");
         Error.style.display = "block";
-        setTimeout(() => {
+
+        function errormsghide(){
             Error.style.display = "none";
-            }, 3000);
+        }
+
+        let errortime = setTimeout(errormsghide, 3000);
     }
 }
 
+// Hide the Error Message when click other area
 function normalMode(){
     var Error = document.getElementById("error");
     if (Error.style.display === "block"){
