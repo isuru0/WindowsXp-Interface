@@ -32,6 +32,7 @@ function password(){
         var beforecontents = document.getElementById("beforethecontent");
         beforecontents.style.opacity = 0;
 
+        document.getElementById("loadstartupsound").volume = 0.5;
         document.getElementById("loadstartupsound").play();
 
         function loginwindow(){
