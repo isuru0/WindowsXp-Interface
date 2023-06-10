@@ -17,7 +17,7 @@ function password(){
         aftercontents.style.opacity = 1;
         var beforecontents = document.getElementById("beforethecontent");
         beforecontents.style.opacity = 0;
-
+        
         document.getElementById("loadstartupsound").play();
 
         function loginwindow(){
@@ -42,6 +42,8 @@ function password(){
         let loginwindowtime = setTimeout(loginwindow, 5000);
     }
     else {
+        document.getElementById("password").value = "";
+        document.getElementById("password").focus();
         var Error = document.getElementById("error");
         Error.style.display = "block";
 
@@ -50,6 +52,7 @@ function password(){
         }
 
         let errortime = setTimeout(errormsghide, 3000);
+
     }
 }
 
