@@ -7,11 +7,44 @@
     <title>Boot Screen</title>
     <link rel="stylesheet" href="bootScreenStyles.css">
 </head>
-<body>
+<body onload="booting()">
+    <main id="homeBoot">
+        <figure>
+            <img src="bootScreenimage/bootScreen-logo.png">
+            <p>Professional</p>
+        </figure>
+
+        <section>
+            <div class="main-loadbox">
+                <div class="main-loadbox-cubeset" id="cubeSet">
+                    <div class="main-loadbox-cubeset-cubes"></div>
+                    <div class="main-loadbox-cubeset-cubes"></div>
+                    <div class="main-loadbox-cubeset-cubes"></div>
+                </div>
+            </div>
+            <div class="main-loadbox-lside"></div>
+            <div class="main-loadbox-rside"></div>
+        </section>
+
+        <footer>
+            <ul>
+                <li>Copyright &copy; 1985-2001</li>
+                <li>Microsoft Corppration</li>
+            </ul>
+            <p>Microsoft <sup>&#9415;</sup></p>
+        </footer>
+    </main>
+
+    <!--/ Gray Screen while booting /-->
+    <div class="gray-screen" id="grayScreen">
+        <p id="grayScreenP">-</p>
+    </div>
+    <!--/ Black Screen while booting /-->
+    <div class="black-screen" id="blackScreen"></div>
 
 
 <!--=====================================-->
-<script src="bootScreenAction.js"></script>
+<script async defer src="bootScreenAction.js"></script>
 <!--=====================================-->
 </body>
 </html>
