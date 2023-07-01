@@ -10,6 +10,14 @@ var Error = document.getElementById("error");
 Error.style.display = "none";
 
 // Check the password
+var passwd = document.getElementById("password");
+passwd.addEventListener("keypress", function(checkPass) {
+    if (checkPass.key === "Enter"){
+        checkPass.preventDefault();
+        document.getElementById("enter_password").click();
+    }
+}); 
+
 function password(){
     var passw = document.getElementById("password").value;
     if (passw === "password"){

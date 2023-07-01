@@ -7,9 +7,9 @@
 ** My Computer Window minimize, close actions.\
 ** Open the start memu.
 
-![Alt text](BootScreen/readme/bootscreen-home.jpg)
-![Alt text](LoadPage/readme/loadpage-normal.jpg)
-![Alt text](LoadPage/readme/loadpage-incorrectPassword.jpg)
-![Alt text](LoadPage/readme/homepage-normal.jpg)
-![Alt text](LoadPage/readme/homepage-start.jpg)
-![Alt text](LoadPage/readme/homepage-mycomputer.jpg)
+<img src="BootScreen/readme/bootscreen-home.jpg"  width="300" height="180">
+<img src="LoadPage/readme/loadpage-normal.jpg"  width="300" height="180">
+<img src="LoadPage/readme/loadpage-incorrectPassword.jpg"  width="300" height="180">
+<img src="LoadPage/readme/homepage-normal.jpg"  width="300" height="180">
+<img src="LoadPage/readme/homepage-start.jpg"  width="300" height="180">
+<img src="LoadPage/readme/homepage-mycomputer.jpg"  width="300" height="180">
