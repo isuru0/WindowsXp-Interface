@@ -43,7 +43,6 @@
       </div>
       <!--===================================================================================================-->
 
-
       <!--======================================== My Computer Window =======================================-->
       <div class="mycomputer-window" id="myComputerWindow">
 
@@ -355,8 +354,8 @@
           <ul>
             <li onclick="logoff()"><img src="images/start/bottom/start-icon-log.png" alt="log off"></li>
             <li onclick="logoff()"><p>Log Off</p></li>
-            <li><img src="images/start/bottom/start-icon-off.png" alt="turn off"></li>
-            <li><p>Turn Off Computer</p></li>
+            <li onclick="turnoffComputer()"><img src="images/start/bottom/start-icon-off.png" alt="turn off"></li>
+            <li onclick="turnoffComputer()"><p>Turn Off Computer</p></li>
           </ul>
         </div>
 
@@ -397,6 +396,45 @@
 
     <!--===========================================================================================-->
 
+    <!--======================================== Taskbar =======================================-->
+    
+    
+
+    <div class="shutdown-box" id="shutdownBox">
+
+      <div class="sb-title-row">
+        <p class="sb-title">Turn off computer</p>
+        <img class="sb-title-logo" src="images/shutdownbox/shutdownbox-xplogo.png">
+        <p class="sb-title-logo-text">TM</p>
+      </div>
+
+      <div class="sb-divide-row"></div>
+      
+      <div class="sb-main-row">
+
+        <div class="sb-main-subbox">
+          <img alt="Shutdown box stand by logo" src="images/shutdownbox/shutdownbox-standby.jpg">
+          <p class="sb-main-img-text">Stand By</p>
+        </div>
+        
+        <div class="sb-main-subbox">
+          <img alt="Shutdown box turn off logo" src="images/shutdownbox/shutdownbox-turnoff.jpg">
+          <p class="sb-main-img-text">Turn off</p>
+        </div>
+          
+        <div class="sb-main-subbox" onclick="restart()">
+          <img alt="Shutdown box restart logo" src="images/shutdownbox/shutdownbox-restart.png">
+          <p class="sb-main-img-text">Restart</p>
+        </div>
+      </div>
+      
+      <div class="sb-last-row">
+        <button class="sb-last-btn" onclick="shutboxCancel()">Cancel</button>
+      </div>
+    </div>
+
+
+    <!--========================================================================================-->
 
 
 <script src="script.js"></script>

@@ -25,6 +25,9 @@ function startTime() {
   // Onload hidden My Computer Shadow
   var mycomputershadowshow = document.getElementById("myComputerWindowShadow");
   mycomputershadowshow.style.display = "none";
+  // Onload hidden Shutdown Box
+  var shutdownbox = document.getElementById("shutdownBox");
+  shutdownbox.style.display = "none";
 
 
   
@@ -50,7 +53,17 @@ function startTime() {
   function logoff(){
     location.href = "./LoadPage/loadpage.html";
   }
-
+   // Start Turn Off Button action
+  function turnoffComputer(){
+    var shutdownbox = document.getElementById("shutdownBox");
+    if (shutdownbox.style.display === "none"){
+      shutdownbox.style.display = "block";
+    } else {
+      shutdownbox.style.display = "none";
+    }
+    var startmenu = document.getElementById("menuBox");
+    startmenu.style.display = "none";
+  }
 
   //  My Computer Button actions
   function mycomputer() {
@@ -61,7 +74,6 @@ function startTime() {
       mycomputerget.style.display = "block";
       mycomputershadowget.style.display = "block";
       startmenu.style.display = "none";
-
     }
   }
 
@@ -87,4 +99,23 @@ function startTime() {
   //  My Computer Resize Button actions
   function mycomputerresize() {
     console.log("My Computer Resize");
+}
+
+//End Box Cancel Button Actions
+function shutboxCancel(){
+  var shutdownbox = document.getElementById("shutdownBox");
+  if (shutdownbox.style.display === "none"){
+    shutdownbox.style.display = "block";
+  } else {
+    shutdownbox.style.display = "none";
+  }
+}
+
+//End Box Stand By Button Actions
+
+//End Box Turn Off Button Actions - tempory quick exit (Not real shutdown)
+
+//End Box Restart By Button Actions - tempory quick restart (Not real restart)
+function restart(){
+  location.href = "./BootScreen/bootScreen.html";
 }

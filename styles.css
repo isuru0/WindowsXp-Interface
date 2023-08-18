@@ -13,6 +13,9 @@ header{
 .icons{
     display: flex;
 }
+.icons img{
+    transition: filter 1s ease;
+}
 
     /*  Left side Icon  */
 .left-icon{
@@ -212,3 +215,85 @@ header{
 #sound-logo:hover{background-color: rgba(0, 0, 0, 0.09);}
 
 
+/* Shutdown Box */
+.shutdown-box{
+    width: 30vw;
+    height: 29vh;
+    position: absolute;
+    background-color: #003399;
+    margin: -45vh 0 0 37vw;
+    font-family: sans-serif;
+    border: 2px solid #191919;
+}
+
+.sb-title-row{
+    display: flex;
+    padding: 8px 0px 8px 8px;
+}
+.sb-title{
+    font-size: 23px;
+    color: #fff;
+    margin: 0.7vh 0 0 0.8vw;
+}
+.sb-title-logo{
+    width: 3vw;
+    margin: 0 0 0 12.6vw;
+}
+.sb-title-logo-text{
+    color: #6c89fc;
+    font-size: 8px;
+    margin-top: 4vh;
+    margin-left: -0.35vw;
+
+}
+
+.sb-divide-row{
+    background-image: linear-gradient(to right, #003399, #c6d8ff, #003399);
+    height: 2px;
+}
+
+.sb-main-row{
+    display: flex;
+    background-image: linear-gradient(to right, #5b7dde, #99b7f5, #698be4);
+}
+.sb-main-subbox{
+    margin: 4.2vh 0 4.2vh 5.2vw;
+}
+.sb-main-subbox img{
+    width: 2.9vw;
+    border-radius: 5px;
+    border-color: #fff;
+    box-shadow: 0 0 2px #fff;
+}
+.sb-main-subbox img:hover{
+    cursor: pointer;
+}
+.sb-main-subbox p{
+    color: #fff;
+    font-weight: 100;
+    font-size: 13px;
+    text-shadow: 0 0 2px #fff;
+}
+.sb-main-subbox p:hover{
+    cursor: pointer;
+}
+
+.sb-last-btn{
+    margin: 1.5vh 0 0 24vw;
+    text-shadow: 0 0 2px #fff;
+    padding: 3px 15px;
+    font-size: 14px;
+    box-shadow: 1px 1px 1px #000000b9;
+    background-color: #f4e8e5;
+}
+.sb-last-btn:hover{
+    cursor: pointer;
+}
+.shutdown-gray-screen{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: #e9e9e965;
+    top: 0;
+    filter: grayscale(100%)
+;}
